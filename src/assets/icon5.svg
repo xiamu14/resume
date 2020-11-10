@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="104px" height="104px" viewBox="0 0 104 104" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon5</title>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="桌面端" transform="translate(-185.000000, -397.000000)" fill="#F35567">
+            <g id="icon5" transform="translate(184.999224, 396.999224)">
+                <path d="M104.000776,0.000775541957 L104,4.037 L4.036,104 L0.000775541957,104.000776 L0,100.966 L100.966,0 L104.000776,0.000775541957 Z M104,24.965 L104,32.036 L32.036,104 L24.965,104 L104,24.965 Z M104,53.965 L104,61.036 L61.036,104 L53.965,104 L104,53.965 Z M104,80.965 L104,88.036 L88.036,104 L80.965,104 L104,80.965 Z M75.037,0 L0,75.037 L0,67.966 L67.966,0 L75.037,0 Z M47.037,0 L0,47.037 L0,39.966 L39.966,0 L47.037,0 Z M21.037,0 L0,21.037 L0,13.966 L13.966,0 L21.037,0 Z" id="形状结合"></path>
+            </g>
+        </g>
+    </g>
+</svg>
