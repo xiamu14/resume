@@ -119,7 +119,7 @@ export default {
 .section-box {
   margin-top: 42px;
   column-count: 2;
-  column-gap: 100px;
+  column-gap: 60px;
 }
 .decoration1,
 .decoration2 {
