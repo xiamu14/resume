@@ -3,7 +3,7 @@
     <div class="person-info-box">
       <Avatar />
       <div class="person-info">
-        <h2>夏木</h2>
+        <h2>夏志刚</h2>
         <h4><span class="purple">前端工程师</span> / 5 年工作经验</h4>
       </div>
     </div>

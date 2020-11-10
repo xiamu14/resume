@@ -1,4 +1,29 @@
-const sections = [
+interface P {
+  type: "p";
+  text: String;
+}
+
+interface List {
+  type: "list";
+  dataset: P[];
+}
+
+interface RichText {
+  type: "richText";
+  root: (P | List)[];
+}
+
+interface Section {
+  sectionTitle: String;
+  dataset: {
+    title: String;
+    subTitle?: String;
+    duration?: [String, String];
+    content: RichText | P | List;
+  }[];
+}
+
+const sections: Section[] = [
   {
     sectionTitle: "工作经历",
     dataset: [
@@ -59,6 +84,49 @@ const sections = [
                     "制定前端团队绩效考核标准、定期组织技术分享交流、促进团队成员代码开源",
                 },
               ],
+            },
+          ],
+        },
+      },
+      {
+        title: "糗事百科",
+        subTitle: "前端工程师",
+        duration: ["2017", "2018"],
+        content: {
+          type: "richText",
+          root: [
+            {
+              type: "p",
+              text: "我任职果酱时代公司研发部门前端组，主要负责一下工作",
+            },
+            {
+              type: "list",
+              dataset: [
+                {
+                  type: "p",
+                  text: "果酱直播 App 内 Hybrid 网页开发",
+                },
+                {
+                  type: "p",
+                  text:
+                    "果酱直播 App 运营活动单页(包含 Hybrid , PC , Mobile 多端)开发",
+                },
+              ],
+            },
+          ],
+        },
+      },
+      {
+        title: "3W 孵化器",
+        subTitle: "前端工程师实习/初级",
+        duration: ["2015", "2017"],
+        content: {
+          type: "richText",
+          root: [
+            {
+              type: "p",
+              text:
+                "我任职 3W 集团旗下创业服务平台的网站前端开发；主要开发了类似 36氪 next、ProductHunt 的 web App 产品(呈现方式是微信内网页)",
             },
           ],
         },
@@ -124,6 +192,45 @@ const sections = [
           ],
         },
       },
+      {
+        title: "数据中台",
+        subTitle: "http://fish-admin-beta.utoooo.com/",
+        content: {
+          type: "richText",
+          root: [
+            {
+              type: "p",
+              text: "产品概要：电商类产品的数据中台",
+            },
+            {
+              type: "p",
+              text: "技术栈：And Design, React, Typescript, Formily",
+            },
+            {
+              type: "p",
+              text:
+                "技术产出：中台中存在大量重复的增删改查表格模块，开发了使用 DSL 描述表格字段，自动生成模块代码的命令行工具和桌面工具",
+            },
+          ],
+        },
+      },
+      {
+        title: "鲜鱼堡",
+        subTitle: "小程序",
+        content: {
+          type: "richText",
+          root: [{
+            type: "p",
+            text: "产品概要：电子商城小程序"
+          }, {
+            type: "p",
+            text: "技术栈：Remax(基于 React 封装的小程序渲染库库)，Egg-UI(团队内部封装的UI组件库)"
+          }, {
+            type: "p",
+            text: "技术难点：在小程序或移动端网页上使用类似 formily 表单库，因为 formily 的场景聚焦在中台，包含了大而全的功能，在移动端使用则过于庞大，所以在 Egg-UI 中封装了类似功能表单组件 AForm"
+          }]
+        }
+      }
     ],
   },
   {
@@ -140,29 +247,15 @@ const sections = [
               dataset: [
                 {
                   type: "p",
+                  text: "AForm",
+                },
+                {
+                  type: "p",
                   text: "AFetch",
                 },
                 {
                   type: "p",
                   text: "Retouch",
-                },
-              ],
-            },
-          ],
-        },
-      },
-      {
-        title: "参与开发",
-        subTitle: "",
-        content: {
-          type: "richText",
-          root: [
-            {
-              type: "list",
-              dataset: [
-                {
-                  type: "p",
-                  text: "wxDraw",
                 },
               ],
             },
