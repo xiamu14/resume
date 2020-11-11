@@ -219,20 +219,27 @@ const sections: Section[] = [
         subTitle: "小程序",
         content: {
           type: "richText",
-          root: [{
-            type: "p",
-            text: "产品概要：电子商城小程序"
-          }, {
-            type: "p",
-            text: "技术栈：Remax(基于 React 封装的小程序渲染库库)，Egg-UI(团队内部封装的UI组件库)"
-          }, {
-            type: "p",
-            text: "技术难点：在小程序或移动端网页上使用类似 formily 表单库，因为 formily 的场景聚焦在中台，包含了大而全的功能，在移动端使用则过于庞大，所以在 Egg-UI 中封装了类似功能表单组件 AForm"
-          }]
-        }
-      }
+          root: [
+            {
+              type: "p",
+              text: "产品概要：电子商城小程序",
+            },
+            {
+              type: "p",
+              text:
+                "技术栈：Remax(基于 React 封装的小程序渲染库库)，Egg-UI(团队内部封装的UI组件库)",
+            },
+            {
+              type: "p",
+              text:
+                "技术难点：在小程序或移动端网页上使用类似 formily 表单库，因为 formily 的场景聚焦在中台，包含了大而全的功能，在移动端使用则过于庞大，所以在 Egg-UI 中封装了类似功能表单组件 AForm",
+            },
+          ],
+        },
+      },
     ],
   },
+
   {
     sectionTitle: "开源项目",
     dataset: [
